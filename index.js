@@ -378,7 +378,7 @@ function updateResults() {
             row.querySelector('.ac-result').value = '';
         }
         if (hc > 0) {
-            const hcPercentileResult = calculateHCPercentile(totalGestationalWeeks, hc);
+            const hcPercentileResult = calculateHCPercentile(gestationalAgeWeeks, hc);
             row.querySelector('.hc-result').value = hcPercentileResult;
         } else {
             row.querySelector('.hc-result').value = '';
