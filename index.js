@@ -427,7 +427,7 @@ function calculateEFWPercentile(gestationalWeeks, efw) {
     }
 
     const mean = Math.exp(0.578 + 0.332 * gestationalWeeks - 0.00354 * Math.pow(gestationalWeeks, 2));
-    const sd = mean * 0.132;
+    const sd = mean * 0.1323;
 
     return normDist(efw, mean, sd, true) * 100;
 }
